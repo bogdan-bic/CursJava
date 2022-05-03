@@ -2,21 +2,23 @@ package curs1;
 
 public class Tester {
 
-	//variabile
+	// Variabile
 	
 	public String nume;
 	public int ratePerHour;
+	public int age;
 	
 	/**
 	 * Constructor
 	 */
-	public Tester( ) {}
-	public Tester(String Prenume) {
-		nume = Prenume;
+	public Tester( ) {
+		
 	}
+//	public Tester(String Prenume) {
+//		nume = Prenume;
+//	}
 
-
-	//metode
+	// Metode
 	
 	public String getNume() {
 		return nume;
@@ -33,11 +35,15 @@ public class Tester {
 	public void setRatePerHour(int ratePerHour) {
 		this.ratePerHour = ratePerHour;
 	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public void setAge(int age) {
+		this.age = age; 
+	}
 
-	
-	
-	
-	
 }
 
 
