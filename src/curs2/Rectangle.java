@@ -1,46 +1,55 @@
 package curs2;
 
 public class Rectangle {
-
-	// Variabile de instanta
+	
+	//variabile de instanta
 	private int lenght;
 	private int width;
 	private String name;
+		
 	
 //	public Rectangle() {
-//		lenght = 5;
+//		lenght =6;
 //	}
-
-
-	public Rectangle(int nr1, int nr2) {
-		setLenght(nr1);
-		setWidth(nr2);
+	
+	public Rectangle(int num1, int num2) {
+		setLenght(num1);
+		setWidth(num2); // width = num2;  // this.width =  width;
 	}
-
-//	public Rectangle(int nr1, int nr2, String Name() {
-//		setLenght(nr1);
-//		setWidth(nr2);
+	
+//	public Rectangle(int num1, int num2, String Name) {
+//		setLenght(num1);
+//		setWidth(num2); // width = num2;  // this.width =  width;
 //		name = Name;
 //	}
 	
-	public void calculateTotal() {
-		int total = lenght + width;
-	}
-	
-	
-	public int getLength() {
-		return lenght;
-	}
 	
 	public void setLenght(int lenght) {
 		this.lenght = lenght;
 	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
 	
+	public void calculateTotal() {
+		//variabile locale
+		int total =  lenght + width;
+	}
+	
+	public int calcSuma() {
+		int suma;
+		suma =  lenght* width;
+		return suma;
+	}
+
+
+	public int getLenght() {
+		return lenght;
+	}
+
 	public int getWidth() {
 		return width;
 	}
 	
-	public void setWidth(int width) {
-		this.width = width;
-	}
 }
